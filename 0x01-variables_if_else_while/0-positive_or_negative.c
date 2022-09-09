@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - prints random number 
+ * main - prints random number
  * Return: 0 Always (Success)
  */
 
@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
+
 	if (n == 0)
 		printf("%d is zero\n", n);
 	else if (n < 0)
