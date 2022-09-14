@@ -16,14 +16,12 @@ void jack_bauer(void)
 	{
 		for (h2 = 48; h2 <= 57; h2++)
 		{
+			if (h1 > 50 && h2 > 52)
+				break;
 			for (m1 = 48; m1 <= 53; m1++)
 			{
 				for (m2 = 48; m2 <= 57; m2++)
 				{
-					if (h1 > 50 && h2 >= 52)
-					{
-						break;
-					}
 					_putchar(h1);
 					_putchar(h2);
 					_putchar(58);
