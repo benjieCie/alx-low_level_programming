@@ -4,7 +4,7 @@
  * add - adds two integers.
  *
  *@a: interer one
- @b: integer two
+ *@b: integer two
  *
  * Return: sum of two integers
  */
