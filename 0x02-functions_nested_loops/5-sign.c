@@ -5,7 +5,8 @@
  *
  * @n: the number
  *
- * Return: 1 and prints + if n greater than zero, returns 0 and  * prints 0 if n is zero, returns -1 and prints - if n is negative
+ * Return: 1 n greater than zero returns. -1 if n is negative.
+ * 0 is zero.
  */
 int print_sign(int n)
 {
