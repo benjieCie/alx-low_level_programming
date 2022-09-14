@@ -17,7 +17,7 @@ void print_alphabet(void)
 			_putchar(i);
 		}
 
-		k++
+		k++;
 		_putchar('\n');
 	}
 }
