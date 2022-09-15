@@ -11,7 +11,7 @@ void print_line(int n)
 {
 	int c;
 
-	if (n < 1)
+	if (n <= 0)
 	{
 		_putchar('\n');
 	}
@@ -19,7 +19,7 @@ void print_line(int n)
 	{
 		for (c = 0; c <= n; c++)
 		{
-			_putchar(95);
+			_putchar('_');
 		}
 		_putchar('\n');
 	}
