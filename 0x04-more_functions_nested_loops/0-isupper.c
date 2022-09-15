@@ -6,11 +6,11 @@
  *
  *@c: Variable text
  *
- *Return: Always 0.
+ *Return: 1 if upper else return 0
  */
 int _isupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c >= 65 && c <= 90)
 	{
 		return (1);
 	}
