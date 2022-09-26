@@ -8,7 +8,7 @@
  * @src: Source to copy from
  * @n: bytes to copy
  *
- * Return: dest
+ * Return: 0 always success
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
