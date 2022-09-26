@@ -6,6 +6,8 @@
  * @s: pointed destination
  * @b: the desired value
  * @n: number of bytes
+ *
+ * Return: arry of b chars and n bytes
  */
 char *_memset(char *s, char b, unsigned int n)
 {
