@@ -22,8 +22,6 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accept[j])
 				len++;
 			j++;
-			if (accept[j] == '\0')
-				return (len);
 		}
 	}
 	return (len);
