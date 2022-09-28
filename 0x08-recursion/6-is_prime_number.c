@@ -11,14 +11,14 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	if (check_prime(n, n) > 0)
+	if (check_prime(n, n / 2) > 0)
 		return (1);
 	return (0);
 }
 
 /**
  * check_prime - checks if a number is prime
- * 
+ *
  * @n: input number
  * @i: comparison
  *
