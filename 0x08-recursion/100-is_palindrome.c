@@ -49,5 +49,6 @@ int check_palindrome(char str[], int i, int j)
 		return (0);
 	if (i <= j || i < j + 1)
 		return (check_palindrome(str, i + 1, j - 1));
+	return (1);
 
 }
