@@ -41,7 +41,7 @@ int str_length(char *s)
  *
  * Return: string if palindrome
  */
-int check_palindrome(char *str, int i, int j)
+int check_palindrome(char str[], int i, int j)
 {
 	if (i >= j)
 		return (1);
