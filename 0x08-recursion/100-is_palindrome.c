@@ -7,7 +7,7 @@
  *
  * Return: 1 if a string is a palindrome and 0 if not
  */
-is_palindrome(char *s)
+int is_palindrome(char *s)
 {
 	int len;
 
@@ -48,6 +48,6 @@ int check_palindrome(char *str, int i, int j)
 	if (str[i] != str[j])
 		return (0);
 	if (i <= j || i < j + 1)
-		return (check_palindrome(str, i + 1, end - 1));
+		return (check_palindrome(str, i + 1, j - 1));
 
 }
