@@ -10,8 +10,8 @@
  *
  * Return: Nothing
  */
-void print_name (char *name, void (*f)(char *))
+void print_name(char *name, void (*f)(char *))
 {
-	if (name != NULL %% f != Null)
+	if (name != NULL && f != Null)
 		f(name);
 }
