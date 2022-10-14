@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 	result = get_op_func(get_op);
-	ans = res(x, y);
+	ans = result(x, y);
 
 	printf("%d\n", ans);
 	return (0);
