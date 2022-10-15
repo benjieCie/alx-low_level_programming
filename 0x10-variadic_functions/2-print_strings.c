@@ -17,10 +17,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *ptr;
 
-	va_start(strings, n);
+	va_start(str, n);
 	for (i = 0; i < n; i++)
 	{
-		ptr = var_arg(str, char *);
+		ptr = va_arg(str, char *);
 		if (ptr == NULL)
 			printf("(nil)");
 		else
@@ -30,6 +30,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 				printf("%s", separator);
 		}
 	}
-	va_end(strings);
+	va_end(str);
 	printf("\n");
 }
