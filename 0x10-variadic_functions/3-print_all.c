@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 
 	va_start(valist, format);
 
-	while (format && fromat[i])
+	while (format && format[i])
 		i++;
 
 	while (format && format[n])
@@ -47,8 +47,8 @@ void print_all(const char * const format, ...)
 				printf("%s%s", str, sep);
 				break;
 		}
-		n++
+		n++;
 	}
-	printd("\n");
+	printf("\n");
 	va_end(valist);
 }
