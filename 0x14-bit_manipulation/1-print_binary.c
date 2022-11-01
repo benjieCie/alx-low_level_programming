@@ -1,21 +1,37 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
- * get_bit - a function that prints the binary representation of a number.
+ * print_binary - Entry Point
  *
- * @n: input
- *
- * @index: index
+ * @n: dec input
  *
  * Return: 0
  *
  */
-int get_bit(unsigned long int n, unsigned int index)
+void print_binary(unsigned long int n)
 {
-	unsigned int bits;
+	int i = 0, count, k, temp;
 
-	bits = (n >> index) & 1;
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
 
-	if ((bits == 1) || (bits == 0))
-		return (bits);
-	return (-1);
+	temp = n;
+
+	while (temp != 0)
+	{
+		i++;
+		temp = temp >> 1;
+	}
+
+	for (count = i - 1; count >= 0; count--)
+	{
+		k = n >> count;
+		if (k & 1)
+			printf("1");
+		else
+			printf("0");
+	}
 }
